@@ -1,9 +1,26 @@
 /* ── LOADER ── */
 window.addEventListener('load', () => {
   setTimeout(() => {
-    document.getElementById('loader').classList.add('hidden');
+    const l = document.getElementById('loader');
+    if (l) l.classList.add('hidden');
   }, 2000);
 });
+
+/* ── MOBILE NAV TOGGLE ── */
+const navToggle = document.getElementById('navToggle');
+const navLinks  = document.querySelector('.nav-links');
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    navToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.textContent = '☰';
+    });
+  });
+}
 
 /* ── CUSTOM CURSOR ── */
 const cursor = document.getElementById('cursor');
@@ -258,3 +275,4 @@ if (form) {
   }
   animate();
 })();
+
