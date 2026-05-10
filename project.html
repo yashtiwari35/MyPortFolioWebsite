@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Yash Tiwari</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+
+<nav id="navbar" class="scrolled">
+  <div class="nav-logo">DATA<span>VISION</span></div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li><a href="resume.pdf" download class="nav-resume">Resume ↓</a></li>
+  </ul>
+</nav>
+
+<div class="page-header">
+  <a class="back-link" href="index.html">← Back to Home</a>
+  <h1>PROJECTS</h1>
+  <p style="color:rgba(255,255,255,0.5); font-size:16px; margin-top:8px;">Data analytics work — Python, SQL, Power BI</p>
+</div>
+
+<section class="projects-page">
+  <div class="projects-grid reveal">
+
+    <div class="proj-card glass">
+      <div class="proj-num">01</div>
+      <div class="proj-tag">Python · SQL · Power BI</div>
+      <h3 class="proj-title">Sales Order Analysis</h3>
+      <p class="proj-desc">Comprehensive sales order analysis with trend detection, product segmentation, order-to-cash conversion metrics, and actionable insights for revenue growth.</p>
+      <ul class="proj-insights">
+        <li>Technology category → highest profit</li>
+        <li>Year-wise sales growth identified</li>
+        <li>Region-wise performance benchmarked</li>
+      </ul>
+      <div class="proj-links">
+        <a href="details.html" class="btn-primary small">View Details</a>
+        <a href="https://github.com/yashtiwari35/sales-data-analysis-project.git" class="btn-outline small" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="proj-card glass">
+      <div class="proj-num">02</div>
+      <div class="proj-tag">
+            Python · Pandas · NumPy · Streamlit · Data Visualization</div>
+      <h3 class="proj-title">Risk Return Analysis & Portfolio Insights</h3>
+      <p class="proj-desc">Developed a full-scale financial analytics pipeline to evaluate long-term performance of Indian equities (TCS, Sun Pharma, M&M). The project answers key investment questions using risk-return metrics, correlation analysis, and interactive dashboards.</p>
+      <ul class="proj-insights">
+        <li>Solved real-world investment questions (return vs risk)</li>
+        <li>Correlation heatmaps for diversification strategy</li>
+        <li>Sharpe Ratio-based portfolio optimization</li>
+        <li>Interactive Streamlit dashboard with filters & controls</li>
+      </ul>
+      <div class="proj-links">
+        <a href="https://iu75zzgb2zc3jdknxlekr8.streamlit.app/" class="btn-primary small">View Dashboard</a>
+        <a href="https://github.com/yashtiwari35/Risk-return-analysis-of-investments-" class="btn-outline small">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="proj-card glass">
+      <div class="proj-num">03</div>
+      <div class="proj-tag">Pandas · Seaborn · EDA</div>
+      <h3 class="proj-title">Netflix Data Analysis</h3>
+      <p class="proj-desc">Exploratory data analysis of the Netflix dataset using pandas and seaborn. Explores title trends, release year distribution, and region-based content growth.</p>
+      <ul class="proj-insights">
+        <li>Content trend over years</li>
+        <li>Genre distribution mapped</li>
+        <li>Region-wise growth charted</li>
+      </ul>
+      <div class="proj-links">
+        <a href="#" class="btn-primary small">Coming Soon</a>
+        <a href="#" class="btn-outline small">GitHub →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">DATA<span>VISION</span></div>
+    <p>© 2026 Yash Tiwari | Data Analyst</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

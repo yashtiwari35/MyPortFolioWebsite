@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Tiwari | Data Analyst</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <p class="loader-text">LOADING PORTFOLIO</p>
+  </div>
+</div>
+
+<!-- CANVAS 3D BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- CURSOR -->
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">DATA<span>WITh YASh</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="Resume26.pdf" download class="nav-resume">Resume ↓</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">● Available for Work</div>
+    <h1 class="hero-title">
+      <span class="title-line">Hi, I'm YASH</span>
+      <span class="title-line accent">TIWARI</span>
+    </h1>
+    <p class="hero-sub">Data Analyst · Python · SQL · Power BI</p>
+    <p class="hero-desc">Transforming raw datasets into actionable insights and powerful visual dashboards.</p>
+    <div class="hero-btns">
+      <a href="project.html" class="btn-primary">View Projects</a>
+      <a href="Resume26.pdf" download class="btn-outline">Download CV</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">3+</span><span class="stat-label">Projects</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Core Tools</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">MCA</span><span class="stat-label">Education</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-img-wrap">
+      <div class="hero-img-ring ring1"></div>
+      <div class="hero-img-ring ring2"></div>
+      <div class="hero-img-ring ring3"></div>
+      <img src="back.png" alt="Data Analytics" class="hero-img">
+      <div class="hero-float-card fc1">
+        <span class="fc-icon">📊</span>
+        <span>Power BI</span>
+      </div>
+      <div class="hero-float-card fc2">
+        <span class="fc-icon">🐍</span>
+        <span>Python</span>
+      </div>
+      <div class="hero-float-card fc3">
+        <span class="fc-icon">🗄️</span>
+        <span>SQL</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about reveal">
+  <div class="section-label">— WHO I AM</div>
+  <div class="about-grid">
+    <div class="about-left">
+      <h2 class="section-title">Turning Data Into <span class="red">Decisions</span></h2>
+      <p class="about-text">I'm a passionate Data Analyst skilled in Python, SQL, and Power BI. I love uncovering hidden patterns in complex datasets and converting them into clear, compelling stories that drive business decisions.</p>
+      <p class="about-text">With a strong foundation in MCA and hands-on project experience, I build end-to-end analytics pipelines — from raw data ingestion to interactive dashboards.</p>
+      <div class="about-tags">
+        <span class="tag">Data Analysis</span>
+        <span class="tag">Dashboard Design</span>
+        <span class="tag">EDA</span>
+        <span class="tag">ML Basics</span>
+        <span class="tag">Automation</span>
+        <span class="tag">Visualization</span>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="about-card glass">
+        <div class="ac-icon">🎓</div>
+        <div>
+          <div class="ac-title">Education</div>
+          <div class="ac-val">MCA — Computer Applications</div>
+        </div>
+      </div>
+      <div class="about-card glass">
+        <div class="ac-icon">📍</div>
+        <div>
+          <div class="ac-title">Location</div>
+          <div class="ac-val">India</div>
+        </div>
+      </div>
+      <div class="about-card glass">
+        <div class="ac-icon">📧</div>
+        <div>
+          <div class="ac-title">Email</div>
+          <div class="ac-val"><a href="mailto:yashtiwari281123@gmail.com">yashtiwari281123@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="about-card glass">
+        <div class="ac-icon">🚀</div>
+        <div>
+          <div class="ac-title">Focus</div>
+          <div class="ac-val">Data-Driven Decision Making</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills reveal">
+  <div class="section-label">— EXPERTISE</div>
+  <h2 class="section-title">Technical <span class="red">Skills</span></h2>
+
+  <div class="skills-grid">
+    <div class="skill-item glass">
+      <div class="skill-header">
+        <span class="skill-name">Python (Pandas, NumPy)</span>
+        <span class="skill-pct">90%</span>
+      </div>
+      <div class="skill-track"><div class="skill-bar" data-pct="90"></div></div>
+    </div>
+    <div class="skill-item glass">
+      <div class="skill-header">
+        <span class="skill-name">SQL</span>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="skill-track"><div class="skill-bar" data-pct="85"></div></div>
+    </div>
+    <div class="skill-item glass">
+      <div class="skill-header">
+        <span class="skill-name">Power BI</span>
+        <span class="skill-pct">88%</span>
+      </div>
+      <div class="skill-track"><div class="skill-bar" data-pct="88"></div></div>
+    </div>
+    <div class="skill-item glass">
+      <div class="skill-header">
+        <span class="skill-name">Data Visualization</span>
+        <span class="skill-pct">85%</span>
+      </div>
+      <div class="skill-track"><div class="skill-bar" data-pct="85"></div></div>
+    </div>
+    <div class="skill-item glass">
+      <div class="skill-header">
+        <span class="skill-name">Matplotlib & Seaborn</span>
+        <span class="skill-pct">80%</span>
+      </div>
+      <div class="skill-track"><div class="skill-bar" data-pct="80"></div></div>
+    </div>
+    <div class="skill-item glass">
+      <div class="skill-header">
+        <span class="skill-name">Machine Learning Basics</span>
+        <span class="skill-pct">70%</span>
+      </div>
+      <div class="skill-track"><div class="skill-bar" data-pct="70"></div></div>
+    </div>
+  </div>
+
+  <div class="tools-row">
+    <div class="tool-badge">Jupyter Notebook</div>
+    <div class="tool-badge">Excel</div>
+    <div class="tool-badge">Tableau</div>
+    <div class="tool-badge">GitHub</div>
+    <div class="tool-badge">VS Code</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services reveal">
+  <div class="section-label">— WHAT I DO</div>
+  <h2 class="section-title">My <span class="red">Services</span></h2>
+  <div class="services-grid">
+    <div class="service-card glass">
+      <div class="sc-icon">📊</div>
+      <h3>Data Analysis</h3>
+      <p>Deep-dive analysis of business datasets using Python and SQL to uncover meaningful patterns and actionable insights.</p>
+    </div>
+    <div class="service-card glass">
+      <div class="sc-icon">📈</div>
+      <h3>Dashboard Design</h3>
+      <p>Build interactive, real-time dashboards in Power BI and Tableau that make complex data understandable at a glance.</p>
+    </div>
+    <div class="service-card glass">
+      <div class="sc-icon">⚙️</div>
+      <h3>Report Automation</h3>
+      <p>Automate recurring reports and business processes using Python scripts, saving time and reducing human error.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects reveal">
+  <div class="section-label">— MY WORK</div>
+  <h2 class="section-title">Featured <span class="red">Projects</span></h2>
+  <div class="projects-grid">
+
+    <div class="proj-card glass">
+      <div class="proj-num">01</div>
+      <div class="proj-tag">Python · SQL · Power BI</div>
+      <h3 class="proj-title">Sales Order Analysis</h3>
+      <p class="proj-desc">Comprehensive sales order analysis with trend detection, product segmentation, order-to-cash conversion metrics, and actionable insights for revenue growth.</p>
+      <ul class="proj-insights">
+        <li>Technology category → highest profit</li>
+        <li>Year-wise sales growth identified</li>
+        <li>Region-wise performance benchmarked</li>
+      </ul>
+      <div class="proj-links">
+        <a href="details.html" class="btn-primary small">View Details</a>
+        <a href="https://github.com/yashtiwari35/sales-data-analysis-project.git" class="btn-outline small" target="_blank">GitHub →</a>
+      </div>
+    </div>
+
+    <!-- <div class="proj-card glass">
+      <div class="proj-num">02</div>
+      <div class="proj-tag">K-Means · DBSCAN · Tableau</div>
+      <h3 class="proj-title">Customer Segmentation</h3>
+      <p class="proj-desc">Clustering algorithm to group customers by behavior and lifetime value. Built with K-Means and DBSCAN workflows, plus Tableau dashboards for management.</p>
+      <ul class="proj-insights">
+        <li>Behavior-based customer groups</li>
+        <li>Lifetime value analysis</li>
+        <li>Management-ready dashboards</li>
+      </ul>
+      <div class="proj-links">
+        <a href="#" class="btn-primary small">Coming Soon</a>
+        <a href="#" class="btn-outline small">GitHub →</a>
+      </div>
+    </div> -->
+
+     <div class="proj-card glass">
+      <div class="proj-num">02</div>
+      <div class="proj-tag">
+            Python · Pandas · NumPy · Streamlit · Data Visualization</div>
+      <h3 class="proj-title">Risk Return Analysis & Portfolio Insights</h3>
+      <p class="proj-desc">Developed a full-scale financial analytics pipeline to evaluate long-term performance of Indian equities (TCS, Sun Pharma, M&M). The project answers key investment questions using risk-return metrics, correlation analysis, and interactive dashboards.</p>
+      <ul class="proj-insights">
+        <li>Solved real-world investment questions (return vs risk)</li>
+        <li>Correlation heatmaps for diversification strategy</li>
+        <li>Sharpe Ratio-based portfolio optimization</li>
+        <li>Interactive Streamlit dashboard with filters & controls</li>
+      </ul>
+      <div class="proj-links">
+        <a href="https://iu75zzgb2zc3jdknxlekr8.streamlit.app/" class="btn-primary small">View Dashboard</a>
+        <a href="https://github.com/yashtiwari35/Risk-return-analysis-of-investments-" class="btn-outline small">GitHub →</a>
+      </div>
+    </div>
+
+    <div class="proj-card glass">
+      <div class="proj-num">03</div>
+      <div class="proj-tag">Pandas · Seaborn · EDA</div>
+      <h3 class="proj-title">Netflix Data Analysis</h3>
+      <p class="proj-desc">Exploratory data analysis and visualization of the Netflix dataset. Explores title trends, release year distribution, and region-based content growth.</p>
+      <ul class="proj-insights">
+        <li>Content trend over years</li>
+        <li>Genre distribution mapped</li>
+        <li>Region-wise growth charted</li>
+      </ul>
+      <div class="proj-links">
+        <a href="#" class="btn-primary small">Coming Soon</a>
+        <a href="#" class="btn-outline small">GitHub →</a>
+      </div>
+    </div>
+
+  </div>
+  <div style="text-align:center; margin-top:48px;">
+    <a href="project.html" class="btn-primary">See All Projects →</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact reveal">
+  <div class="section-label">— GET IN TOUCH</div>
+  <h2 class="section-title">Let's <span class="red">Collaborate</span></h2>
+  <p class="contact-sub">Have a data problem to solve? Let's talk and turn your raw data into real results.</p>
+  <div class="contact-wrap">
+    <div class="contact-info">
+      <div class="ci-item glass">
+        <span class="ci-icon">📧</span>
+        <div>
+          <div class="ci-label">Email</div>
+          <div class="ci-val"><a href="mailto:yashtiwari281123@gmail.com">yashtiwari281123@gmail.com</a></div>
+        </div>
+      </div>
+      <div class="ci-item glass">
+        <span class="ci-icon">📍</span>
+        <div>
+          <div class="ci-label">Location</div>
+          <div class="ci-val">India</div>
+        </div>
+      </div>
+      <div class="ci-item glass">
+        <span class="ci-icon">💼</span>
+        <div>
+          <div class="ci-label">GitHub</div>
+          <div class="ci-val"> <a href="https://github.com/yashtiwari35" target="_blank">github.com/yashtiwari35</a></div>
+        </div>
+      </div>
+    </div>
+    <!-- <form class="contact-form glass" id="contactForm">
+      <input type="text" id="contactName" placeholder="Your Name" required>
+      <input type="email" id="contactEmail" placeholder="Your Email" required>
+      <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+      <div id="formMsg" style="display:none; padding:12px 16px; border-radius:10px; font-size:14px; font-weight:600;"></div>
+      <button type="submit" class="btn-primary" id="submitBtn">Send Message →</button>
+    </form> -->
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">DATA<span>VISION</span></div>
+    <p>© 2026 Yash Tiwari | Data Analyst</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- FORCE LOADER HIDE — fallback agar Three.js load na ho -->
+<script>
+  setTimeout(() => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+      loader.style.transition = 'opacity 0.4s ease';
+      loader.style.opacity = '0';
+      setTimeout(() => { loader.style.display = 'none'; }, 400);
+    }
+  }, 2500);
+</script>
+
+</body>
+</html>
